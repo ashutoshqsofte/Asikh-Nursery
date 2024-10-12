@@ -15,22 +15,5 @@ test("renders the navbar with all links", () => {
 
 test("navbar is fixed at the top of the viewport", () => {
   const { container } = render(<Header />);
-  const navbar = container.querySelector(".head"); // Updated class name
-
-  // Initially, the navbar should be fixed at the top
-  // expect(navbar).toHaveStyle("position: fixed");
-  // expect(navbar).toHaveStyle("top: 0");
-  // });
-
-  //  test("navbar remains fixed when scrolling", () => {
-  //  const { container } = render(<Header />);
-  //  const navbar = container.querySelector(".head"); // Updated class name
-
-  //   // Simulate scrolling
-  //   window.scrollY = 100;
-  //   window.dispatchEvent(new Event("scroll"));
-
-  //   // The navbar should still be fixed
-  //   expect(navbar).toHaveStyle("position: fixed");
-  //   expect(navbar).toHaveStyle("top: 0");
+  const navbar = container.querySelector(".head");
 });

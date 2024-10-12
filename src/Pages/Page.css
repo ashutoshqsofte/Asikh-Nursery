@@ -1,0 +1,136 @@
+.img-main {
+   background-image: url("../images/img.jfif");
+    height: 100vh;
+    background-size: cover;
+}
+
+#txt  {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes slidein {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+}
+
+#txt {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#txt {
+  width: 10em;
+}
+
+.clrpag {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(52, 233, 20, 0.375);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.smlimg {
+    border: 2px solid rgb(122, 141, 94);
+    padding: 1em;
+    max-width: 100%;
+    height: 25em;
+    margin-left: 25%;
+    margin-top: 20%;
+  }
+
+  .txtnm {
+    width: 40rem;
+    margin-top: 15%;
+    font-size: x-large;
+  }
+
+  .btnplnt {
+    background-color: rgba(210, 207, 102, 0.793);
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+
+  /*About Us*/
+
+  .Ab-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/bkg.jfif");
+    width: 100%;
+    height: 100vh;
+  }
+
+  .cntnt {
+    width: 50%;
+    height: 70vh;
+    background-color: rgba(145, 146, 136, 0.534);
+    display: flex;
+    justify-content: center;
+  }
+
+  #hding {
+    font-style: oblique;
+    text-decoration: underline;
+  }
+
+  .linetxt {
+    display: flex;
+    width: 70%;
+    margin-top: 15%;
+  }
+
+  .txt {
+    color: rgb(249, 250, 251);
+    font-size: x-large;
+    font-style: inherit;
+
+    opacity: 0.1;
+  animation: fadeIn 2s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0.1; }
+    to { opacity: 2; }
+  }
+  
+
+  .Ab-main2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(114, 189, 114, 0.599), rgb(137, 236, 200));
+    width: 100%;
+    height: 100vh;
+  }
+
+  .abimg-1 {
+    border: 2px solid black;
+    width: 40%;
+    height: 80%;
+    background-image: url("../images/img4.jfif");
+    background-size: cover;
+  }
+
+  .abimg-2 {
+    border: 2px solid black;
+    width: 40%;
+    height: 80%;
+    background-image: url("../images/img6.jfif");
+    background-size: cover;
+  }
