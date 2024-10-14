@@ -2,20 +2,27 @@
    background-image: url("../images/img.jfif");
     height: 100vh;
     background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 #txt  {
   animation-duration: 3s;
-  animation-name: slidein;
+  animation-name: bounce;
   animation-iteration-count: 3;
   animation-direction: alternate;
 }
 
-@keyframes slidein {
-  from {
-    translate: 150vw 0;
-    scale: 200% 1;
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(-20px);
+  }
+
 
   to {
     translate: 0 0;
@@ -71,7 +78,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/bkg.jfif");
+    background-image: url("../images/newNur3.jfif");
+    background-size: cover;
     width: 100%;
     height: 100vh;
   }
@@ -79,7 +87,7 @@
   .cntnt {
     width: 50%;
     height: 70vh;
-    background-color: rgba(145, 146, 136, 0.534);
+    background-color: rgba(34, 34, 32, 0.659);
     display: flex;
     justify-content: center;
   }
@@ -87,6 +95,7 @@
   #hding {
     font-style: oblique;
     text-decoration: underline;
+    color: beige;
   }
 
   .linetxt {
@@ -134,3 +143,159 @@
     background-image: url("../images/img6.jfif");
     background-size: cover;
   }
+
+/* Plant Care */
+
+.plntpag {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(8, 234, 8, 0.46), rgba(202, 230, 21, 0.362));
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.smlimgP {
+    border: 2px solid rgba(186, 206, 156, 0.533);
+    padding: 1em;
+    max-width: 100%;
+    height: 25em;
+    margin-left: 25%;
+    margin-top: 39%;
+  }
+
+  .txtnmP {
+    width: 40rem;
+    margin-top: 15%;
+    font-size: x-large;
+    text-wrap-style: balance;
+  }
+
+  .headP {
+    color: rgb(4, 58, 23);
+  }
+
+  .animatePtxt {
+    animation: floating 3s ease-in-out infinite;
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  .plntpag2 {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(73, 65, 53, 0.46), rgba(202, 230, 21, 0.362));
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .smlimgP2 {
+      border: 2px solid rgba(186, 206, 156, 0.533);
+      padding: 1em;
+      max-width: 100%;
+      height: 25em;
+      margin-left: 25%;
+      margin-top: 5%;
+      width: 150%;
+      height: 90%;
+    }
+  
+    .txtnmP2 {
+      width: 40rem;
+      margin-top: 0;
+      font-size: x-large;
+      text-wrap-style: balance;
+    }
+  
+    .headP2 {
+      color: rgb(4, 58, 23);
+    }
+  
+    .animatePtxt2 {
+      margin-top: 13%;
+    }
+    
+    
+.animatePtxt2 {
+  animation-duration: 3s;
+  animation-name: bounce;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+    @keyframes typewriter {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    /* Contact Us */
+
+    .cntct-main {
+      width: 100%;
+      height: 100vh;
+      background: linear-gradient(90deg, rgba(172, 88, 20, 0.46), rgba(10, 187, 10, 0.362));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .img-cntct {
+        width: 140vh;
+        height: 60vh;
+        border: 2px solid rgba(54, 100, 47, 0.505);
+        border-radius: 50px;
+    }
+
+    .cntct-img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
+
+    .cntct-img {
+      opacity: 0.1;
+      animation: fadeIn 4s forwards;
+    }
+    
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .cntct-info {
+      width: 100%;
+      height: 20%;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .smlimgP-cnt {
+      width: 12%;
+      height: auto;
+    }
+
+    .Fst-ph {
+      margin-left: 25%;
+    }
+
+    .smlimgP-cnt-sc {
+      width: 13%;
+      height: auto;
+    }
