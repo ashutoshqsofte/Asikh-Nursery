@@ -15,7 +15,7 @@ const About = () => {
               is ​to plant hope everywhere, ensuring ​fresh oxygen and health
               for all. We ​pride ourselves on our superior ​quality products and
               meticulous ​care, striving to keep our ​customers happy and
-              connected ​every step of the way
+              connected ​every step of the way.
             </p>
           </div>
         </div>

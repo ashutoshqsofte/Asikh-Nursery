@@ -1,0 +1,45 @@
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px; 
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .sections {
+    margin: 10px 0;
+    font-size: 20px;
+  }
+
+  
+  .menu-icon {
+    display: block;
+  }
+
+  
+  .menu-checkbox:checked + .menu-icon + .nav-links {
+    display: flex;
+  }
+}

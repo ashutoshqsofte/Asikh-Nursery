@@ -19,7 +19,7 @@ const Contact = () => {
               src={"./images/Phone_icon.png"}
               alt="description"
             />
-            <p>+91 913587xxxx</p>
+            <p className="cont-p">+91 913587xxxx</p>
           </div>
           <div>
             <img
@@ -27,7 +27,7 @@ const Contact = () => {
               src={"./images/mail.png"}
               alt="description"
             />
-            <p>asikh@gmail.com</p>
+            <p className="cont-p">asikh@gmail.com</p>
           </div>
 
           <div>

@@ -1,5 +1,6 @@
 import Header from "../Components/Header";
 import "./Page.css";
+import "./Responsive.css";
 
 const Home = () => {
   return (
