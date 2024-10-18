@@ -1,0 +1,128 @@
+import React from "react";
+import "./OrderNow.css";
+import "./OrderResponsive.css";
+import Asparagus from "../ImageProducts/Asparagus.jfif";
+import RangonChinese from "../ImageProducts/RangonChinese.jfif";
+import TableKaini from "../ImageProducts/TableKaini.jfif";
+import Araucariya5 from "../ImageProducts/Araucariya5.jpeg";
+import BonsaiFicus35cm from "../ImageProducts/BonsaiFicus35cm.jpeg";
+import GoldenShrimp from "../ImageProducts/GoldenShrimp.jpeg";
+import greenyonSyngonium from "../ImageProducts/greenyonSyngonium.jpeg";
+import LuckyBamboo from "../ImageProducts/LuckyBamboo.jpeg";
+import MoneyPlant from "../ImageProducts/MoneyPlant.jpeg";
+import OrhulPune from "../ImageProducts/OrhulPune.jpeg";
+import RubberPlant from "../ImageProducts/RubberPlant.jpeg";
+import ShatavariPlant from "../ImageProducts/ShatavariPlant.jpeg";
+
+const products = [
+  {
+    id: 1,
+    name: "Asparagus",
+    price: 20,
+    image: Asparagus,
+  },
+  {
+    id: 2,
+    name: "Rangon Chinese",
+    price: 30,
+    image: RangonChinese,
+  },
+  {
+    id: 3,
+    name: "Table Kaini",
+    price: 25,
+    image: TableKaini,
+  },
+  {
+    id: 4,
+    name: "Araucariya 5'",
+    price: 25,
+    image: Araucariya5,
+  },
+  {
+    id: 5,
+    name: "Bonsai Ficus (35cm)",
+    price: 25,
+    image: BonsaiFicus35cm,
+  },
+  {
+    id: 6,
+    name: "Golden Shrimp",
+    price: 25,
+    image: GoldenShrimp,
+  },
+  {
+    id: 7,
+    name: "greenyon Syngonium",
+    price: 25,
+    image: greenyonSyngonium,
+  },
+  {
+    id: 8,
+    name: "Lucky Bamboo",
+    price: 25,
+    image: LuckyBamboo,
+  },
+  {
+    id: 9,
+    name: "Money Plant",
+    price: 25,
+    image: MoneyPlant,
+  },
+  {
+    id: 10,
+    name: "Orhul Pune",
+    price: 25,
+    image: OrhulPune,
+  },
+  {
+    id: 11,
+    name: "Rubber Plant",
+    price: 25,
+    image: RubberPlant,
+  },
+  {
+    id: 12,
+    name: "Shatavari Plant",
+    price: 25,
+    image: ShatavariPlant,
+  },
+];
+
+function OrderNow() {
+  const handleBuyNow = (phoneNumber) => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
+  return (
+    <>
+      <div className="order-now">
+        <h1>Order Now</h1>
+        <a href="/Produucts.xlsx" download className="download-link">
+          Download Our Products
+        </a>
+        <div className="product-list">
+          {products.map((product) => (
+            <div key={product.id} className="product-card">
+              <img
+                src={product.image}
+                alt={product.name}
+                className="product-image"
+              />
+              <h2>{product.name}</h2>
+              <p>Price: ₹{product.price}</p>
+              <button
+                className="order-button"
+                onClick={() => handleBuyNow("+1234567890")}
+              >
+                Buy Now
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+      ;
+    </>
+  );
+}
+
+export default OrderNow;

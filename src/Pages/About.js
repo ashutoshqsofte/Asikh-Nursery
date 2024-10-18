@@ -1,13 +1,11 @@
-import Header from "../Components/Header";
 import "./Page.css";
 
 const About = () => {
   return (
     <>
-      <Header />
       <div className="Ab-main">
         <div className="cntnt">
-          <h1 id="hding">Our Story</h1>
+          <h1 id="hding">About Us</h1>
           <div className="linetxt">
             <p className="txt">
               Welcome to Asikh Nursery, a ​legacy of many years in Hajipur

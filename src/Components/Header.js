@@ -1,11 +1,12 @@
 import "./Head.css";
 import "./Resp.css";
+import logo from "../Logo/logo.png";
 
 function Header() {
   return (
     <div className="header">
       <a className="logo" href="/home">
-        Asikh Nursery
+        <img src={logo} alt="Asikh Nursery Logo" className="logo-img" />
       </a>
 
       <input type="checkbox" id="menu-toggle" className="menu-checkbox" />
@@ -28,6 +29,9 @@ function Header() {
         </a>
         <a className="sections" href="/contact">
           Contact Us
+        </a>
+        <a className="sections" href="/order">
+          Order Now
         </a>
       </nav>
     </div>

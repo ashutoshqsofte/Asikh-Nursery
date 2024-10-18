@@ -1,11 +1,9 @@
-import Header from "../Components/Header";
 import "./Page.css";
 import "./Responsive.css";
 
 const Home = () => {
   return (
     <>
-      <Header />
       <div className="img-main">
         <center>
           <h1 id="txt">Fresh Product Delivery</h1>

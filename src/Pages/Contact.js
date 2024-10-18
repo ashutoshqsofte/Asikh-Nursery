@@ -1,9 +1,6 @@
-import Header from "../Components/Header";
-
 const Contact = () => {
   return (
     <>
-      <Header />
       <div className="cntct-main">
         <div className="img-cntct">
           <img
