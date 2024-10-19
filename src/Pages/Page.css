@@ -71,10 +71,19 @@
   }
 
   .btnplnt {
-    background-color: rgba(210, 207, 102, 0.793);
-    cursor: pointer;
+    margin-top: 21px;
+    background-color: #a0af4c; 
+    color: rgb(255, 255, 255); 
     border: 2px solid black;
-    border-radius: 8px;
+    border-radius: 15px; 
+    padding: 15px 32px; 
+    font-size: 16px; 
+    cursor: pointer; 
+  }
+
+  .btnplnt:hover {
+    background-color: #eaed0c; 
+    color: #293a21;
   }
 
   /*About Us*/
@@ -282,25 +291,93 @@
       }
     }
 
-    .cntct-info {
-      width: 100%;
-      height: 20%;
-      margin-top: 40px;
+    .whatsapp-link {
       display: flex;
-      justify-content: center;
       align-items: center;
+      text-decoration: none;
+      color: #25D366; 
+      font-weight: bold;
+      font-size: 50px;
     }
+    
+    .whatsapp-logo {
+      width: 114px;
+      height: 114px;
+      margin-right: 8px;
+    }
+    
 
-    .smlimgP-cnt {
-      width: 12%;
-      height: auto;
-    }
+    /* Our Services */
 
-    .Fst-ph {
-      margin-left: 25%;
-    }
 
-    .smlimgP-cnt-sc {
-      width: 13%;
-      height: auto;
-    }
+.our-services {
+  margin-top: 60px;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  background-color: #a2ad97; 
+}
+
+.our-services h1 {
+  color: #293a21; 
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.our-services p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.our-services ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.our-services ul li {
+  font-size: 1.1em;
+  line-height: 1.8em;
+}
+
+/* Tablet styles (768px to 1024px) */
+@media (max-width: 1024px) {
+  .our-services {
+    padding: 20px;
+  }
+
+  .our-services h1 {
+    font-size: 2em;
+  }
+
+  .our-services p {
+    font-size: 1.1em;
+  }
+
+  .our-services ul li {
+    font-size: 1em;
+  }
+}
+
+/* Mobile styles (less than 768px) */
+@media (max-width: 768px) {
+  .our-services {
+    padding: 15px;
+  }
+
+  .our-services h1 {
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  .our-services p {
+    font-size: 1em;
+  }
+
+  .our-services ul {
+    margin-left: 15px;
+  }
+
+  .our-services ul li {
+    font-size: 0.9em;
+  }
+}

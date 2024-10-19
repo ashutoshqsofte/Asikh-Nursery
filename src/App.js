@@ -6,6 +6,7 @@ import About from "./Pages/About";
 import Plant from "./Pages/Plant";
 import Contact from "./Pages/Contact";
 import OrderNow from "./Pages/OrderNow";
+import OurServices from "./Pages/OurServices";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/plant" element={<Plant />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/order" element={<OrderNow />} />
+          <Route path="/our-services" element={<OurServices />} />
         </Routes>
       </BrowserRouter>
     </>

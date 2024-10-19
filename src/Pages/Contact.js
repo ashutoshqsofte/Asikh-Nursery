@@ -1,3 +1,6 @@
+import React from "react";
+import WhatsappLogo from "../images/WhatsappLogo.png";
+
 const Contact = () => {
   return (
     <>
@@ -9,41 +12,24 @@ const Contact = () => {
             alt="description"
           />
         </div>
-        <div className="cntct-info">
-          <div className="Fst-ph">
-            <img
-              className="smlimgP-cnt"
-              src={"./images/Phone_icon.png"}
-              alt="description"
-            />
-            <p className="cont-p">+91 913587xxxx</p>
-          </div>
-          <div>
-            <img
-              className="smlimgP-cnt"
-              src={"./images/mail.png"}
-              alt="description"
-            />
-            <p className="cont-p">asikh@gmail.com</p>
-          </div>
 
-          <div>
-            <a href="*">
+        <div className="head-whts">
+          <nav>
+            {/* Other nav links */}
+            <a
+              href="https://wa.me/9191358xxxxx?text=Hello!%20I'm%20interested%20in%20your%20products."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="whatsapp-link"
+            >
               <img
-                className="smlimgP-cnt-sc"
-                src={"./images/fb.png"}
-                alt="description"
+                src={WhatsappLogo}
+                alt="WhatsApp"
+                className="whatsapp-logo"
               />
+              <span>+91 91358xxxxx</span>
             </a>
-
-            <a href="*">
-              <img
-                className="smlimgP-cnt-sc"
-                src={"./images/insta2.png"}
-                alt="description"
-              />
-            </a>
-          </div>
+          </nav>
         </div>
       </div>
     </>

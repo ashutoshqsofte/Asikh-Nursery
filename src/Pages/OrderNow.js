@@ -18,73 +18,73 @@ const products = [
   {
     id: 1,
     name: "Asparagus",
-    price: 20,
+    price: 0,
     image: Asparagus,
   },
   {
     id: 2,
     name: "Rangon Chinese",
-    price: 30,
+    price: 130,
     image: RangonChinese,
   },
   {
     id: 3,
     name: "Table Kaini",
-    price: 25,
+    price: 130,
     image: TableKaini,
   },
   {
     id: 4,
     name: "Araucariya 5'",
-    price: 25,
+    price: 150,
     image: Araucariya5,
   },
   {
     id: 5,
     name: "Bonsai Ficus (35cm)",
-    price: 25,
+    price: 1400,
     image: BonsaiFicus35cm,
   },
   {
     id: 6,
     name: "Golden Shrimp",
-    price: 25,
+    price: 0,
     image: GoldenShrimp,
   },
   {
     id: 7,
     name: "greenyon Syngonium",
-    price: 25,
+    price: 0,
     image: greenyonSyngonium,
   },
   {
     id: 8,
     name: "Lucky Bamboo",
-    price: 25,
+    price: 370,
     image: LuckyBamboo,
   },
   {
     id: 9,
     name: "Money Plant",
-    price: 25,
+    price: 240,
     image: MoneyPlant,
   },
   {
     id: 10,
     name: "Orhul Pune",
-    price: 25,
+    price: 70,
     image: OrhulPune,
   },
   {
     id: 11,
     name: "Rubber Plant",
-    price: 25,
+    price: 200,
     image: RubberPlant,
   },
   {
     id: 12,
     name: "Shatavari Plant",
-    price: 25,
+    price: 0,
     image: ShatavariPlant,
   },
 ];
@@ -96,8 +96,8 @@ function OrderNow() {
   return (
     <>
       <div className="order-now">
-        <h1>Order Now</h1>
-        <a href="/Produucts.xlsx" download className="download-link">
+        <h1 className="ord-h">Order Now</h1>
+        <a href="/ProduuctsNew.xlsx" download className="download-link">
           Download Our Products
         </a>
         <div className="product-list">

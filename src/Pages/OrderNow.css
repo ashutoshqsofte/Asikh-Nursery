@@ -1,4 +1,8 @@
 /* product image */
+.ord-h{
+  color: #293a21;
+}
+
 .product-card {
   border: 1px solid #ccc; 
   border-radius: 5px; 
