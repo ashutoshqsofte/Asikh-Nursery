@@ -311,7 +311,7 @@
 
 
 .our-services {
-  margin-top: 60px;
+  margin-top: 25px;
   padding: 40px;
   font-family: 'Arial', sans-serif;
   color: #333;
@@ -362,6 +362,7 @@
 @media (max-width: 768px) {
   .our-services {
     padding: 15px;
+    margin-top: 40px;
   }
 
   .our-services h1 {

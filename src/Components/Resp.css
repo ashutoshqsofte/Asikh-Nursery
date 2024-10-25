@@ -43,3 +43,11 @@
     display: flex;
   }
 }
+
+
+/* whatsApp-logo-Header */
+@media (max-width: 768px) {
+  .whatsapp-logo-link {
+    margin-left: 80px; 
+  }
+}

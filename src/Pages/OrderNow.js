@@ -18,7 +18,7 @@ const products = [
   {
     id: 1,
     name: "Asparagus",
-    price: 0,
+    price: 100,
     image: Asparagus,
   },
   {
@@ -48,13 +48,13 @@ const products = [
   {
     id: 6,
     name: "Golden Shrimp",
-    price: 0,
+    price: 100,
     image: GoldenShrimp,
   },
   {
     id: 7,
     name: "greenyon Syngonium",
-    price: 0,
+    price: 100,
     image: greenyonSyngonium,
   },
   {
@@ -84,7 +84,7 @@ const products = [
   {
     id: 12,
     name: "Shatavari Plant",
-    price: 0,
+    price: 100,
     image: ShatavariPlant,
   },
 ];
@@ -112,7 +112,7 @@ function OrderNow() {
               <p>Price: ₹{product.price}</p>
               <button
                 className="order-button"
-                onClick={() => handleBuyNow("+1234567890")}
+                onClick={() => handleBuyNow("1234567890")}
               >
                 Buy Now
               </button>
