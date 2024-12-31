@@ -11,15 +11,38 @@
   z-index: 1000;
 }
 
-.logo-img {
+/* .logo-img {
   width: 60px;
   height: auto;
+} */
+
+/* .logo {
+  font-size: 24px;
+  color: white; 
+  text-decoration: none; 
+} */
+
+.logo-text{
+  font-size: 24px;
+  color: #228b22;
+  font-weight: bold;
+  text-decoration: none;
+  padding-right: 20px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.logo {
-  font-size: 24px;
-  color: white;
-  text-decoration: none;
+.whatsapp-logo-link {
+  margin-left: 690px;
+}
+ 
+.whatsapp-logo-h {
+  width: 40px;  
+  height: 40px;
+}
+ 
+.whatsapp-logo-link:hover .whatsapp-logo-h {
+  opacity: 0.8;
 }
 
 .nav-links {

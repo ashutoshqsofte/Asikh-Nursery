@@ -8,6 +8,14 @@ const Contact = () => {
         <div className="img-cntct">
           <img
             className="cntct-img"
+            src={"./images/Media.jpeg"}
+            alt="description"
+          />
+        </div>
+
+        <div className="img-cntct-L">
+          <img
+            className="cntct-img-L"
             src={"./images/flowers.jfif"}
             alt="description"
           />

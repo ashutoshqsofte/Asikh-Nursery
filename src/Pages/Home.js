@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <div className="img-main">
         <center>
-          <h1 id="txt">Fresh Product Delivery</h1>
+          <h1 id="txt">Fresh Product Deliver</h1>
         </center>
       </div>
       <div className="clrpag">

@@ -267,20 +267,24 @@
       align-items: center;
     }
 
-    .img-cntct {
-        width: 140vh;
-        height: 60vh;
-        border: 2px solid rgba(54, 100, 47, 0.505);
-        border-radius: 50px;
+    .img-cntct-L {
+      width: 140vh;
+      height: 60vh;
+      border: 2px solid rgba(54, 100, 47, 0.505);
+      border-radius: 50px;
     }
 
-    .cntct-img {
+    .img-cntct{
+      display: none;
+    }
+
+    .cntct-img-L {
       width: 100%;
       height: 100%;
       border-radius: 50px;
     }
 
-    .cntct-img {
+    .cntct-img-L {
       opacity: 0.1;
       animation: fadeIn 4s forwards;
     }
