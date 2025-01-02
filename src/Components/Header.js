@@ -12,7 +12,7 @@ function Header() {
 
       <a
         className="whatsapp-logo-link"
-        href="https://wa.me/<9205560610>?text=Hello, I would like to know more about Asikh Nursery."
+        href="https://wa.me/<+91 7519935805>?text=Hello, I would like to know more about Asikh Nursery."
         target="_blank"
         rel="noopener noreferrer"
       >
