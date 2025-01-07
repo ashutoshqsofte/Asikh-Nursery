@@ -267,49 +267,26 @@
       align-items: center;
     }
 
-    .img-cntct-L {
-      width: 140vh;
-      height: 60vh;
-      border: 2px solid rgba(54, 100, 47, 0.505);
-      border-radius: 50px;
+    .address{
+      width: 30%;
+      line-height: 1.5rem;
+      font-size: 1.5rem;
+      font-weight: 550;
+      font-family: sans-serif;
+      margin: 3em 0px 10px 0px;
     }
 
-    .img-cntct{
-      display: none;
+    .map-img-link{
+      width: 95em; 
+      height: 500px;
+      margin: 2em ;
+      overflow: hidden;
+      position: relative;
     }
 
-    .cntct-img-L {
-      width: 100%;
-      height: 100%;
-      border-radius: 50px;
+    .map-img-link iframe{
+      position: absolute;
     }
-
-    .cntct-img-L {
-      opacity: 0.1;
-      animation: fadeIn 4s forwards;
-    }
-    
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-      }
-    }
-
-    .whatsapp-link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-      color: #25D366; 
-      font-weight: bold;
-      font-size: 50px;
-    }
-    
-    .whatsapp-logo {
-      width: 114px;
-      height: 114px;
-      margin-right: 8px;
-    }
-    
 
     /* Our Services */
 

@@ -115,35 +115,22 @@
 
   /* Contact Us */
 
-  .img-cntct {
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgba(54, 100, 47, 0.505);
-    border-radius: 30px;
-    display: block; 
-    width: 100%;
-    max-width: 400px;
-    margin: 15% ;
-}
-
-  .cntct-img {
-    border-radius: 30px;
-    display: block; 
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto; 
-}
-
 .cntct-main {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-.cntct-img-L{
-  display: none;
+.address{
+    width: 100%;
+    text-align: center;
 }
 
-.img-cntct-L{
-  display: none;
+.map-img-link{
+  width: 100%; 
+  height: 700px;
+  margin: 0;
+  padding: 0;
 }
 }
 
