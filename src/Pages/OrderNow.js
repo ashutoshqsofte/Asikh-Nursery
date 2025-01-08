@@ -90,8 +90,9 @@ const products = [
 ];
 
 function OrderNow() {
-  const handleBuyNow = (phoneNumber) => {
-    window.location.href = `tel:${phoneNumber}`;
+  const handleBuyNow = (product) => {
+    const whatsappURL = `https://wa.me/917519935805?text=Hello, I would like to know more about Asikh Nursery.`;
+    window.open(whatsappURL, "_blank");
   };
   return (
     <>
@@ -112,7 +113,7 @@ function OrderNow() {
               <p>Price: ₹{product.price}</p>
               <button
                 className="order-button"
-                onClick={() => handleBuyNow("+1234567890")}
+                onClick={() => handleBuyNow("product")}
               >
                 Buy Now
               </button>

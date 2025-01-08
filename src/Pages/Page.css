@@ -13,13 +13,6 @@
     bottom: 0;
 }
 
-#txt  {
-  animation-duration: 3s;
-  animation-name: bounce;
-  animation-iteration-count: 3;
-  animation-direction: alternate;
-}
-
 @keyframes bounce {
   0%, 100% {
     transform: translateY(0);

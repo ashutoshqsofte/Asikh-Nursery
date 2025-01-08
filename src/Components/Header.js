@@ -1,18 +1,18 @@
 import "./Head.css";
 import "./Resp.css";
-// import logo from "../Logo/logo.png";
+import logo from "../Logo/logo.png";
 
 function Header() {
   return (
     <div className="header">
       <a className="logo-text" href="/home">
-        {/* <img src={logo} alt="Asikh Nursery Logo" className="logo-img" /> */}
-        <p>Asikh Nursery</p>
+        {<img src={logo} alt="Asikh Nursery Logo" className="logo-img" />}
+        {/* <p>Asikh Nursery</p> */}
       </a>
 
       <a
         className="whatsapp-logo-link"
-        href="https://wa.me/<+91 7519935805>?text=Hello, I would like to know more about Asikh Nursery."
+        href="https://wa.me/917519935805?text=Hello, I would like to know more about Asikh Nursery."
         target="_blank"
         rel="noopener noreferrer"
       >
