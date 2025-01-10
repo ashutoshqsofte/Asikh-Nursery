@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
 import Plant from "./Pages/Plant";
@@ -22,6 +23,7 @@ function App() {
           <Route path="/order" element={<OrderNow />} />
           <Route path="/our-services" element={<OurServices />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );

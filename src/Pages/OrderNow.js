@@ -98,7 +98,7 @@ function OrderNow() {
     <>
       <div className="order-now">
         <h1 className="ord-h">Order Now</h1>
-        <a href="/ProduuctsNew.xlsx" download className="download-link">
+        <a href="/ProduuctsNew.pdf" download className="download-link">
           Download Our Products
         </a>
         <div className="product-list">

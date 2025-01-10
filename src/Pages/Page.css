@@ -116,8 +116,8 @@
     font-size: x-large;
     font-style: inherit;
 
-    opacity: 0.1;
-  animation: fadeIn 2s ease-in forwards;
+    /* opacity: 0.1; */
+  /* animation: fadeIn 2s ease-in forwards; */
   }
 
   @keyframes fadeIn {
@@ -182,9 +182,9 @@
     color: rgb(4, 58, 23);
   }
 
-  .animatePtxt {
+  /* .animatePtxt {
     animation: floating 3s ease-in-out infinite;
-  }
+  } */
   
   @keyframes floating {
     0% {
@@ -228,17 +228,17 @@
       color: rgb(4, 58, 23);
     }
   
-    .animatePtxt2 {
+    /* .animatePtxt2 {
       margin-top: 13%;
-    }
+    } */
     
     
-.animatePtxt2 {
+/* .animatePtxt2 {
   animation-duration: 3s;
   animation-name: bounce;
   animation-iteration-count: 3;
   animation-direction: alternate;
-}
+} */
     @keyframes typewriter {
       from {
         width: 0;
