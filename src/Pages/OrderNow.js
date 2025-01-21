@@ -90,7 +90,7 @@ const products = [
 ];
 
 function OrderNow() {
-  const handleBuyNow = (product) => {
+  const handleBuyNow = () => {
     const whatsappURL = `https://wa.me/917519935805?text=Hello, I would like to know more about Asikh Nursery.`;
     window.open(whatsappURL, "_blank");
   };
@@ -99,7 +99,7 @@ function OrderNow() {
       <div className="order-now">
         <h1 className="ord-h">Order Now</h1>
         <a href="/ProduuctsNew.pdf" download className="download-link">
-          Download Our Products
+          Download Our Products List
         </a>
         <div className="product-list">
           {products.map((product) => (
@@ -113,7 +113,7 @@ function OrderNow() {
               <p>Price: ₹{product.price}</p>
               <button
                 className="order-button"
-                onClick={() => handleBuyNow("product")}
+                onClick={() => handleBuyNow()}
               >
                 Buy Now
               </button>

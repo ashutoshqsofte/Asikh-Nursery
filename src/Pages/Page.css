@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body{
+  background-image: url("../images/img.jfif");
+  background-size: cover;
+}
+
 .img-main {
    background-image: url("../images/img.jfif");
     height: 100vh;
@@ -156,9 +161,9 @@
 .plntpag {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(90deg, rgba(8, 234, 8, 0.46), rgba(202, 230, 21, 0.362));
   display: flex;
   justify-content: space-evenly;
+  /* background-image: url("../images/img.jfif"); */
 }
 
 
@@ -169,6 +174,7 @@
     height: 25em;
     margin-left: 25%;
     margin-top: 39%;
+    
   }
 
   .txtnmP {
@@ -182,8 +188,11 @@
     color: rgb(4, 58, 23);
   }
 
-  /* .animatePtxt {
-    animation: floating 3s ease-in-out infinite;
+   /* .animatePtxt {
+    /* background-color: rgba(0, 0, 0, 0.128);
+    color: white; */
+    /* animation: floating 3s ease-in-out infinite; */
+    /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
   } */
   
   @keyframes floating {
@@ -201,7 +210,7 @@
   .plntpag2 {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(90deg, rgba(73, 65, 53, 0.46), rgba(202, 230, 21, 0.362));
+    /* background: linear-gradient(90deg, rgba(73, 65, 53, 0.46), rgba(202, 230, 21, 0.362)); */
     display: flex;
     justify-content: space-evenly;
   }
@@ -281,6 +290,52 @@
       position: absolute;
     }
 
+    .contact-form-container {
+      width: 50%;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button:hover {
+      background-color: #0056b3;
+    }
+    
+    p {
+      margin-top: 20px;
+      font-size: 1.1rem;
+      color: green;
+    }
+    
+
     /* Our Services */
 
 
@@ -289,29 +344,30 @@
   padding: 40px;
   font-family: 'Arial', sans-serif;
   color: #333;
-  background-color: #a2ad97; 
+  background-image: url("../images/img.jfif"); 
 }
 
-.our-services h1 {
+.headers{
   color: #293a21; 
   font-size: 2.5em;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
 }
 
 .our-services p {
-  font-size: 1.2em;
   margin-bottom: 20px;
+  line-height: 1.2em;
+  margin-top: 3px;
 }
 
-.our-services ul {
-  list-style-type: disc;
-  margin-left: 20px;
+.services h1{
+  display: flex;
 }
 
-.our-services ul li {
+.services{
   font-size: 1.1em;
-  line-height: 1.8em;
-}
+} 
 
 /* Tablet styles (768px to 1024px) */
 @media (max-width: 1024px) {

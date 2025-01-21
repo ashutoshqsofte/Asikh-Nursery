@@ -50,6 +50,9 @@ function Header() {
         <a className="sections" href="/contact">
           Contact Us
         </a>
+        {/* <a className="sections" href="/privacy">
+          Privacy
+        </a> */}
       </nav>
     </div>
   );
