@@ -5,12 +5,13 @@ function OurServices() {
   return (
     <div className="our-services">
       <h1 className="headers">Our Services</h1>
+      <div className="services">
       <p>
         At Asikh Nursery, we offer a range of services to help you with all your
         gardening needs, including:
       </p>
 
-      <div className="services">
+      <div className="services1">
         <h1 className="headPa1">Plant Care Advice :</h1>
         <p className="plant">
           Plant care involves several key practices to keep them healthy and thriving. Water consistently but avoid overwatering, adjusting based on the plant type and season. Ensure the plant gets the right light, whether full sun, partial shade, or low light. Use nutrient-rich, well-draining soil to support growth and fertilize during the growing season for added nutrients. Prune regularly to remove dead or damaged parts and maintain a healthy structure. Keep temperature and humidity levels suitable for the plant's needs, as some thrive in specific conditions. Lastly, monitor for pests and address issues quickly. Research your plant's
@@ -27,6 +28,7 @@ function OurServices() {
 
         <h1>Custom garden setup</h1>
         <p>A custom garden setup involves designing and creating a personalized outdoor space tailored to an individual's preferences, available space, and lifestyle. This service typically includes planning the layout, selecting plants, choosing garden structures (like paths, fountains, or seating areas), and deciding on themes or specific aesthetics (such as a tropical, minimalist, or cottage garden). Professional garden designers work closely with clients to understand their vision, taking into account factors like sunlight, soil type, and climate. The setup may include installing raised beds, garden furniture, lighting, irrigation systems, and decorative elements. It ensures a harmonious and functional garden space that meets both aesthetic and practical needs. This service is ideal for homeowners who want to create a unique outdoor retreat or enhance their property's curb appeal.</p>
+      </div>
       </div>
     </div>
   );

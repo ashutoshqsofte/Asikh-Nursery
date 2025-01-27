@@ -10,6 +10,10 @@ function Header() {
         {/* <p>Asikh Nursery</p> */}
       </a>
 
+      <p className="head-address">
+        Chintamani Market, BSNL Golember, Hajipur, Vaishali - 844101
+      </p>
+
       <a
         className="whatsapp-logo-link"
         href="https://wa.me/917519935805?text=Hello, I would like to know more about Asikh Nursery."

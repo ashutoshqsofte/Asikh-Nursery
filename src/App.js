@@ -10,6 +10,7 @@ import OrderNow from "./Pages/OrderNow";
 import OurServices from "./Pages/OurServices";
 import Privacy from "./Pages/Privacy";
 import TermOfUse from "./Pages/TermOfUse";
+// import SocialMediaLinks from "./Pages/SocialMediaLinks";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/our-services" element={<OurServices />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/termofuse" element={<TermOfUse />} />
+          {/* <Route path="/socialmedialinks" element={<SocialMediaLinks />} /> */}
         </Routes>
         <Footer />
       </BrowserRouter>

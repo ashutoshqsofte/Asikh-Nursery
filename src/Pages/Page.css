@@ -6,6 +6,7 @@
 body{
   background-image: url("../images/img.jfif");
   background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
 
 .img-main {
@@ -268,71 +269,98 @@ body{
       justify-content: center;
       align-items: center;
     }
-
-    .address{
+    
+    .address {
       width: 30%;
       line-height: 1.5rem;
       font-size: 1.5rem;
       font-weight: 550;
       font-family: sans-serif;
       margin: 3em 0px 10px 0px;
+      text-align: center;
     }
-
-    .map-img-link{
-      width: 95em; 
-      height: 500px;
-      margin: 2em ;
-      overflow: hidden;
+    
+    .map-container {
+      height: 100vh;
+    }
+    
+    .map-container iframe {
+      position: absolute;
+      top: 0.1;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    #contact-form h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    form {
+      width: 500px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 30px;
+      background-color: #fffdd0e2;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       position: relative;
     }
 
-    .map-img-link iframe{
-      position: absolute;
-    }
-
-    .contact-form-container {
-      width: 50%;
-      margin: 0 auto;
-      padding: 20px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-    
-    .form-group {
-      margin-bottom: 15px;
-    }
-    
     label {
       display: block;
-      font-weight: bold;
+      margin-bottom: 8px;
+      font-size: 15px;
+      font-weight: bolder;
+      color: #222;
     }
     
     input,
     textarea {
-      width: 100%;
-      padding: 8px;
-      margin-top: 5px;
+      width: 95%;
+      padding: 10px;
+      margin-bottom: 15px;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: 10px;
+      font-size: 15px;
     }
     
     button {
-      padding: 10px 20px;
-      background-color: #007bff;
+      width: 100%;
+      padding: 12px;
+      background-color: #007bffdb;
       color: white;
-      border: none;
-      border-radius: 4px;
+      font-size: 25px;
+      border-radius: 20px;
       cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
     }
     
     button:hover {
       background-color: #0056b3;
+      transform: scale(1.05);
     }
     
-    p {
-      margin-top: 20px;
-      font-size: 1.1rem;
-      color: green;
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .address {
+        width: 80%;
+        font-size: 1.2rem;
+      }
+    
+      form {
+        width: 95%;
+        padding: 10px;
+      }
+    
+      input,
+      textarea {
+        width: 95%;
+      }
+    
+      button {
+        width: 100%;
+      }
     }
     
 
@@ -356,17 +384,25 @@ body{
 }
 
 .our-services p {
+  width: 70%;
   margin-bottom: 20px;
   line-height: 1.2em;
   margin-top: 3px;
+  color: white;
 }
 
 .services h1{
   display: flex;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.services1{
+  font-size: 1.1em;
 }
 
 .services{
-  font-size: 1.1em;
+  background-color: rgba(34, 34, 32, 0.659);background-color: rgba(0, 0, 0, 0.366);
 } 
 
 /* Tablet styles (768px to 1024px) */
@@ -411,3 +447,39 @@ body{
     font-size: 0.9em;
   }
 }
+
+/* Social Media Links */
+
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.1);
+  background-color: #f0f0f0;
+}
+
+.social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
