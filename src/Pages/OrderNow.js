@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./OrderNow.css";
 import "./OrderResponsive.css";
 import Asparagus from "../ImageProducts/Asparagus.jfif";
@@ -556,10 +556,17 @@ const products = [
 ];
 
 function OrderNow() {
+  const [query, setQuery] = useState("");
+
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(query.toLowerCase())
+  );
+
   const handleBuyNow = () => {
-    const whatsappURL = `https://wa.me/917519935805?text=Hello, I would like to know more about Asikh Nursery.`;
+    const whatsappURL = `https://wa.me/917519935805?text=Hello, Hello, I’m interested in exploring more about the products and services offered by Asikh Nursery.`;
     window.open(whatsappURL, "_blank");
   };
+
   return (
     <>
       <div className="order-now">
@@ -567,27 +574,44 @@ function OrderNow() {
         <a href="/ProduuctsNew.pdf" download className="download-link">
           Download Our Products List
         </a>
+        
+      <div className="search-bar-container">
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search..."
+          className="search-input"/>
+
+        {/* <button className="search-button">
+          Search
+        </button> */}
+      </div>
+
         <div className="product-list">
-          {products.map((product) => (
-            <div key={product.id} className="product-card">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="product-image"
-              />
-              <h2>{product.name}</h2>
-              <p>Price: ₹{product.price}</p>
-              <button
-                className="order-button"
-                onClick={() => handleBuyNow()}
-              >
-                Buy Now
-              </button>
-            </div>
-          ))}
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <div key={product.id} className="product-card">
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="product-image"/>
+
+                  <h2>{product.name}</h2>
+                  <p>Price: ₹{product.price}</p>
+
+                <button
+                  className="order-button"
+                  onClick={() => handleBuyNow()}>
+                    Buy Now
+                </button>
+              </div>
+            ))
+          ) : (
+            <p>No products found!</p>
+          )}
         </div>
       </div>
-      ;
     </>
   );
 }

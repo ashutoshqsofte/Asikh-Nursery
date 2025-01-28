@@ -10,7 +10,7 @@ COPY package*.json ./
 # Step 4: Install the project dependencies
 RUN npm install
 
-Run npm install -g serve
+RUN npm install -g serve
 
 # Step 5: Copy the rest of the project files into the container
 COPY . .
